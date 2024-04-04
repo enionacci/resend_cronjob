@@ -4,9 +4,9 @@ import { differenceInDays } from "date-fns";
 //import axios from 'axios';
 import { Resend } from "resend";
 
-//const serviceId = process.env.EMAILJSSERVICEID as string
-//const templateId = process.env.EMAILJSTEMPLATEID as string
-//const userId = process.env.EMAILJSPUBLICKEY as string
+export const runtime = "edge";
+export const dynamic = "force-dynamic";
+
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 var clientes2 = [{}];
